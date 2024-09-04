@@ -1,5 +1,6 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
+import "@/utils/env";
 
 const middleware = (req: NextRequest): NextResponse => {
   if (process.env.NODE_ENV !== "production") return NextResponse.next();
@@ -8,8 +9,8 @@ const middleware = (req: NextRequest): NextResponse => {
   if (basicAuth) {
     const [user, pwd] = atob(basicAuth.split(" ")[1]).split(":");
     if (
-      user === process.env.NEXT_PUBLIC_BASIC_AUTH_USER &&
-      pwd === process.env.NEXT_PUBLIC_BASIC_AUTH_PASSWORD
+      user === process.env.BASIC_AUTH_USER &&
+      pwd === process.env.BASIC_AUTH_PASSWORD
     )
       return NextResponse.next();
   }

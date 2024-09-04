@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "env": "vercel env pull"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -27,7 +28,8 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.7",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vercel": "^37.3.0"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
