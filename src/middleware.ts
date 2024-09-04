@@ -1,6 +1,5 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import "@/utils/env";
 
 const middleware = (req: NextRequest): NextResponse => {
   if (process.env.NODE_ENV !== "production") return NextResponse.next();
