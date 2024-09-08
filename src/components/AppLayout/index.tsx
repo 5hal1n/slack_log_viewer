@@ -9,7 +9,7 @@ import {
 import ChannelList from "../ChannelList";
 import { PropsWithChildren } from "react";
 
-const AppLayout = (props: PropsWithChildren) => {
+const AppLayout = async (props: PropsWithChildren) => {
   return (
     <body sx={{ display: "flex" }}>
       <CssBaseline />

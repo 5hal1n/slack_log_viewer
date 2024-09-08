@@ -13,14 +13,16 @@ export const metadata: Metadata = {
   title: "貴族会Slack Log Viewer",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="ja">
       <AppLayout>{children}</AppLayout>
     </html>
   );
-}
+};
+
+export default RootLayout;
