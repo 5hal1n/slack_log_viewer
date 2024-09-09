@@ -4,15 +4,13 @@ import {
   AccordionActions,
   AccordionSummary,
   Button,
-  Toolbar,
 } from "@mui/material";
 
 const AdminPage = () => {
   return (
     <main sx={{ p: 2 }}>
-      <Toolbar />
       <div>
-        <Accordion component="form" action={insertSeeds}>
+        <Accordion expanded component="form" action={insertSeeds}>
           <AccordionSummary>Insert Seeds</AccordionSummary>
           <AccordionActions>
             <Button type="submit" variant="contained">

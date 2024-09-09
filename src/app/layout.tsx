@@ -7,22 +7,14 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import AppLayout from "@/components/AppLayout";
+import { PropsWithChildren } from "react";
 
 export const metadata: Metadata = {
   title: "貴族会Slack Log Viewer",
 };
 
-const RootLayout = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
-  return (
-    <html lang="ja">
-      <AppLayout>{children}</AppLayout>
-    </html>
-  );
+const RootLayout = ({ children }: PropsWithChildren) => {
+  return <html lang="ja">{children}</html>;
 };
 
 export default RootLayout;

@@ -13,7 +13,7 @@ const ChannelList = async () => {
     <List disablePadding>
       {channels.map((channel) => (
         <ListItem key={channel.id}>
-          <ListItemButton LinkComponent={Link} href={`/${channel.id}`}>
+          <ListItemButton LinkComponent={Link} href={`/channels/${channel.id}`}>
             <ListItemText primary={channel.name} />
           </ListItemButton>
         </ListItem>

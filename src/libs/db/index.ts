@@ -8,7 +8,7 @@ type ChannelTable = {
 type MessageTable = {
   channelId: string;
   userId: string;
-  text: string;
+  content: string;
   ts: number;
 };
 

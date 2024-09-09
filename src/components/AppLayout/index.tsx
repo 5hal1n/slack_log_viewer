@@ -36,7 +36,10 @@ const AppLayout = async (props: PropsWithChildren) => {
         <Divider />
         <ChannelList />
       </Drawer>
-      <main sx={{ flexGrow: 1 }}>{props.children}</main>
+      <main sx={{ flexGrow: 1 }}>
+        <Toolbar />
+        {props.children}
+      </main>
     </body>
   );
 };
